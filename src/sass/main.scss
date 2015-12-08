@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.content,body,html{height:100%}
+li{list-style-type:none}
+.thumbnailimg{z-index:3;margin:-200% 0 0 0;}
+.content,.up,.thumbnailimg{position:absolute;}
+.content,.fp-controlArrow,.none,.last-section.active .up{display:none}
+.content{z-index:10;width:100%;background:#fff;max-width:720px;left:50%;}
+.up{bottom:5%;left:50%;margin:0 0 0 -10px;opacity:0;
+  &.up-white{color:#fff}
+}
+.active{.up{animation:up 4s 3s infinite;}
+}
+.fp-slides,.up.up-blank{color:#000}
+.vertical{width:100%;height:100%;position:absolute;background:#fff;z-index:4;
+  i{font-size:12rem;color:#000;margin:-120px 0 0 -60px;-webkit-animation:verticalPhone 5s infinite;animation:verticalPhone 5s infinite}
+  p{font-size:2rem;margin:10px 0 0 -150px}
+}
+@-webkit-keyframes verticalPhone{
+  0%{-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}
+  5%{-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:1}
+  75%{-webkit-transform:rotate(0);transform:rotate(0)}
+  95%{opacity:1}
+  100%{opacity:0}
+}
+@keyframes verticalPhone{
+  0%{-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}
+  5%{-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:1}
+  75%{-webkit-transform:rotate(0);transform:rotate(0)}
+  95%{opacity:1}
+  100%{opacity:0}
+}
+// 第一页
+
+.page1{background:url(../img/bg.png);background-size:cover;padding:5% 0 0;
+  .logo{height:10%;background:url(../img/logo.png) no-repeat;background-size:contain;}
+  .con{height:50%;margin:24% 0 0;background:url(../img/2.png) center no-repeat;background-size:contain;position:relative;
+    .circle{height:100%;width:100%;top:0;background:url(../img/7.png) center no-repeat;background-size:contain;position:absolute;animation:circle  30s linear infinite;}
+    .hat{height:24%;background:url(../img/5.png) 20% no-repeat;background-size:contain;display:none;}
+    .people{height:30%;top:15%;background:url(../img/4.png) center no-repeat;background-size:contain;position:relative;}
+    h2{background:rgb(52,132,217);color:#fff;padding:4% 0;text-align:center;font-weight:bolder;letter-spacing:.3rem;margin:0;position:relative;top:15%;
+      &:after{content:"2015年度评优·段勇"}
+    }
+  }
+}
+@keyframes circle{
+  0%{transform:rotate(0);}
+  100%{transform:rotate(-360deg)}
+}
+.page2{background:rgb(113,168,217);padding:10% 0 0;
+  h1{text-align:center;
+    &:after{font-weight:bolder;content:'Introduce';}
+  }
+  .people{height:50%;background:url(../img/1.png) center no-repeat;background-size:contain;}
+  .con{padding:4% 0 0 5%;
+    h3{margin:0;
+      &:after{content:"网络编辑";font-weight:bolder;color:#fff;margin:0;}
+    }
+    small{margin:-10% 0 0;
+      &:after{content:"IT doge  程序猿";}
+    }
+    p{margin:5% 0 0;
+      &:after{content:'2014年4月我加入学而思市场部,现任网络编辑,负责所有的网站管理以及专题制作。今天我参评的奖项是:开拓创新。'}
+    }
+  }
+}
+.page3{background:rgb(33,127,188);padding:20% 0 0 0;
+  h1{margin:0 0 10% 0;
+    &:after{content:'那我做了些什么？'}
+  }
+  .people{height:60%;background:url(../img/6.png) center no-repeat;background-size:contain;}
+}
+.page4{background:rgb(145,62,176);
+  padding:12% 0 0;
+  .people{height:43%;background:url(../img/8.png) center no-repeat;background-size:contain;margin:0 0 10% 0;}
+  p{
+ font-size: 1.6rem;font-weight: bolder;letter-spacing:.1rem;text-indent:2em;padding: 0 8%;
+    &:after{content:'  ';}}
+}
+.page5{
+  background:rgb(0,162,135);
+   padding:12% 0 0;
+  .people{height:43%;background:url(../img/9.png) center no-repeat;background-size:contain;margin:0 0 10% 0;}
+  .con{width:60%;margin:0 auto;}
+  .btn{width:100%;margin:0 auto;font-size: 2.5rem;
+  border:2px solid #fff;border-radius:2rem;margin:0 0 5% 0;
+  &:hover{
+    background:rgb(215,130,39);
+    border-color:rgb(215,130,39);
+    color:#fff;
+
+  }
+  }
+}
+.page6{
+  background:rgb(241,189,71);
+  .map{
+    height:100%;background:url(../img/10.png) center no-repeat;background-size: contain;
+  }
+  .people{
+    position:absolute;background:url(../img/11.png) bottom no-repeat;background-size: contain;
+    height:100%;width:80%;left:10%;
+    top:0;
+  }
+}
+.section{position:relative;overflow:hidden;color:#fff;
+  i{margin:0 2% 0 0;}
+  h1{text-align:center;font-weight:bolder;}
+}
