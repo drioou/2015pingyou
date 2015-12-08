@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "h5bp-configs": {
+    "directories": {
+      "archive": "archive",
+      "dist": "dist",
+      "src": "src",
+      "test": "test"
+    }
+  },
+  "homepage": "",
+  "license": {
+    "type": "MIT",
+    "url": ""
+  },
+  "name": "duanyong",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {}
+}
